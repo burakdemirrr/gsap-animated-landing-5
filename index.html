@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head> 
 <body>
     <div class="wrapper">
@@ -48,6 +49,28 @@
             <span style="transform:rotate(${i*10.4}deg)">${char}</span>
         `).join("")
         
+    </script>
+    <script>
+        let timeline=gsap.timeline();
+
+        timeline.from("header",{
+            opacity:0,
+            ease:Power2.easeInOut,
+            duration:1.4,
+            delay:.5
+        })
+        timeline.from(".text-container",{
+            y:1000,
+            opacity:0,
+            ease:Expo.easeInOut,
+            duration:1,
+            delay:.5
+        })
+        timeline.to("img",{
+            width:"700px",
+            ease: Circ.easeInOut,
+            delay:2,
+        })
     </script>
     
 </body>

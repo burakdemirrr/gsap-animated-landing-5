@@ -77,10 +77,12 @@ main{
     position: relative;
 }
 main img{
-    width:700px;
+    width:0px;
     max-width:700px;
     position:absolute;
-    top:15%;
+    background-size:cover;
+    height:450px;
+    top:18%;
     left:46%;
     z-index: 0;
 }
@@ -138,7 +140,6 @@ main img{
     }
     
 }
-
 .text span{
     position:absolute;
     font-family: initial;
