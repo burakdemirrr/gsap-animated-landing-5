@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="wrapper">
+        <div class="left"></div>
+        <div class="top"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="buttons">
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </div>
+        </nav>
+        <hr/>
+    </header>
+        <main>
+            <div class="text-container">
+                <span>The hea<span class="white">lth</span></span>
+                <span>of yo<span class="white">ur skin</span> </span>
+            </div>
+            <div class="img-container">
+                <img src="https://images.pexels.com/photos/4241750/pexels-photo-4241750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="circle">
+                <div class="logo"></div>
+                <div class="text">
+                    <p>watch the video . watch the video</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const text=document.querySelector(".text p");
+        text.innerHTML=text.innerText.split("").map((char,i)=>`
+            <span style="transform:rotate(${i*10.4}deg)">${char}</span>
+        `).join("")
+        
+    </script>
+    
+</body>
+</html>
