@@ -16,7 +16,7 @@
 .wrapper{
     background:#faf8f4;
     min-height: 100vh;
-    height:120vh;
+    height:150vh;
 }
 nav {
     display: flex;
@@ -73,7 +73,7 @@ main{
     display: flex;
     align-items: center;
     justify-content:center;
-    height:80vh;
+    height:85vh;
     min-height: 80vh;
     position: relative;
 }
@@ -115,7 +115,7 @@ main img{
     justify-content: center;
     align-items: center;
     right:40%;
-    top:40%;
+    top:30%;
 }
 .logo{
     position:relative;
