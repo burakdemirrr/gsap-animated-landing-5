@@ -97,8 +97,8 @@ main img{
     justify-content: center;
     flex-direction: column;
     z-index: 5;
-    left:20%;
-    top:35%;
+    left:20.5%;
+    top:45%;
     
 }
 .text-container span{
@@ -107,6 +107,7 @@ main img{
     font-family:moglan;
     overflow: hidden;
     letter-spacing: -6px;
+    line-height: 6.6rem;
 }
 .text-container span:nth-child(2){
     transform: translateX(148px);
